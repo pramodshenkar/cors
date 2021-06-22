@@ -30,12 +30,14 @@ var app = new Vue({
       axios
         .post("http://localhost:5000/student/login",
           {
-            Name: this.name
+            username: "pramods11",
+            password: "111",
           },
         )
         .then((response) => {
           if (response.status == 200) {
-            this.token = response.data.token
+            this.token = response.data.result.token
+            console.log(this.token)
             alert("Logging In");
           }
         })
