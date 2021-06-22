@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div id="app" class="container m-5">
+            <p>{{name}}</p>
+            <input type="text" class="form-control col-3" placeholder="Enter Name" v-model="name"/><br>
+            <button @click="onLogin" class="btn btn-info">Login</button>
+            <button @click="onDashboard" class="btn btn-info">Dashboard</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
